@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: lightpink;
+        }
+        .header {
+            background-color:beige;
+            padding: 5px 0;
+            text-align: center;
+            margin-top: -10px;
+            display: block;
+        }
+        
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .img {
+            height: 90px;
+            width: auto;
+            margin-right: 5px;
+        }
+        
+        .spice{
+            font-size: 40px;
+            font-weight: 700;
+            color:#3d2a1f; 
+            font-family: Gloock; 
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        input{
+           margin-left: 50px;
+            height: 25px;
+            width: 300px;
+            border-style:dotted;
+            border-color:rgb(231, 185, 185);
+            background-color: rgb(244, 244, 208);
+            border-radius: 5px;
+            padding-left: 2px;
+        }
+        button{
+            margin-right: 3px;
+            height: 25px;
+            width: 60px;
+            border-radius: 4px;
+            text-align: center;
+            border: none;
+            background-color: #387051;
+            color: white;
+            font-family: Poppins;
+            font-weight: 700;
+            cursor:pointer;
+            letter-spacing: 1px;
+        
+        }
+        
+        button:hover{
+            color:lavender;
+            text-decoration: dashed;
+        }
+        .bar{
+            margin-bottom: 10px;
+            text-align:center;
+        }
+        
+        nav{
+            color:white ;
+            background-color:#705138;
+            margin-bottom: 40px;
+        }
+        li,ul{
+            padding: 5px;
+            padding-left: 120px;
+            padding-right: 100px;
+            display: inline-block;
+            height: 50px;
+            width: auto;
+            font-size: 20px;
+            font-family: Trirong;
+            font-weight: bold;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+        .hyper{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color: burlywood;
+        }
+        
+        .menus{
+            margin-top: 10px;
+            border-color:rgb(2, 2, 2);
+            border-style: solid;
+            display: inline-block;
+            margin-left: 150px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .items1{
+            width: 300px;
+            height: 450px; 
+            background-image:url(person\ 1.png); 
+            background-size:cover; 
+            background-position: center; 
+            border-radius: 10px;
+            display: flex;
+            border: 4px;
+        }
+        .items2{
+            width: 300px;
+            height: 450px; 
+            background-image:url(person\ 2.jpg); 
+            background-size:cover; 
+            background-position: center; 
+            border-radius: 10px;
+            display: flex;
+            border: 4px;
+            padding-bottom: 100px;
+        }
+        .items3{
+            width: 300px;
+            height: 450px; 
+            background-image:url(person\ 3.jpg); 
+            background-size:cover; 
+            background-position: center; 
+            border-radius: 10px;
+            display: flex;
+            border: 4px;
+        }
+        .items4{
+            width: 300px;
+            height: 450px; 
+            background-image:url(person\ 4.jpg); 
+            background-size:cover; 
+            background-position: center; 
+            border-radius: 10px;
+            display: flex;
+            border: 4px;
+        }
+        .items5{
+            width: 300px;
+            height: 450px; 
+            background-image:url(person\ 5.jpg); 
+            background-size:cover; 
+            background-position: center; 
+            border-radius: 10px;
+            display: flex;
+            border: 4px;
+        }
+        .items6{
+            width: 300px;
+            height: 450px; 
+            background-image:url(person\ 6.jpg); 
+            background-size:cover; 
+            background-position: center; 
+            border-radius: 10px;
+            display: flex;
+            border: 4px;
+        }
+        
+        .words
+        {
+            padding-top: 10px;
+            padding-left: 10px;
+            font-family: Trirong;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        .words:hover{
+            cursor: pointer;
+            color:darkcyan;
+        }
+        .order{
+            font-size: 20px;
+        }
+        .order1{
+            font-size: 20px;
+        }
+        .words p.good1{
+            max-width: 310px;
+            font-size: 15px;
+        }
+        .words p.good2{
+            max-width: 300px;
+            font-size: 15px;
+        }
+        .words p.good3{
+            max-width: 300px;
+            font-size: 15px;
+        }
+        .words p.good4{
+            white-space:pre wrap;
+            max-width: 300px;
+            font-size: 15px;
+        }
+        .words p.good5{
+            max-width: 300px;
+            font-size: 15px;
+        }
+        .words p.good6{
+            max-width: 300px;
+            font-size: 15px;
+        }
+        .words p.good7{
+            max-width: 300px;
+            font-size: 15px;
+        }
+        footer{
+            
+            background-color: #705138;
+            text-align: center;
+            height: 70px;
+            width: auto;
+            padding-top: 10px;
+            font-size: 13px;
+            color: lavender;
+            font:small-caps
+        }
+        h2{
+            display: inline;
+            margin-right: 50px;
+        }
+        .terms
+        {
+            color:aliceblue;
+            text-decoration: none;
+        }
+        .terms:hover{
+            text-decoration: underline;
+        }
+        .part{
+            margin-top: 20px;
+            color: #28a560;
+            font-size: 40px;
+            text-align: center;
+            font-family:Poppins;
+            margin-bottom: 50px;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="part">
+        PARTNERS
+    </h1>
+
+    <div class="menus">
+        <div class="items1">
+        </div>
+        <div class="words">
+            <h2 class="order">Mr.Chan</h2>
+           
+        </div>
+    </div>
+    <div class="menus">
+        <div class="items2">
+        </div>
+        <div class="words">
+            <h2 class="order">Ms.Julie</h2>
+  
+        </div>
+    </div>
+    <div class="menus">
+        <div class="items3">
+        </div>
+        <div class="words">
+            <h2 class="order">Mr.Bheema</h2>
+        </div>
+    </div>
+    <div class="menus">
+        <div class="items4">
+        </div>
+        <div class="words">
+            <h2 class="order1">Mrs.Sharushri</h2>
+        </div>
+    </div>
+    <div class="menus">
+        <div class="items5">
+        </div>
+        <div class="words">
+            <h2 class="order">Mr.Walter</h2>
+        </div>
+    </div>
+    <div class="menus">
+        <div class="items6">
+        </div>
+        <div class="words">
+            <h2 class="order">Mr.Mark</h2>
+        </div>
+    </div>
+</body>
+</html>
